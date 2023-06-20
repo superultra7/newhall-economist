@@ -18,7 +18,7 @@ const articlesByTag = {}; // a very basic search index
   allArticleData.forEach(articleData => {
     const panel = $(fillTemplate(panelTemplate, {articleId,
                                                  ...articleData,
-                                                 pdf: articleData.pdf.match(/^http/) ? articleData.pdf : `/pdf/${articleData.pdf}`,
+                                                 pdf: articleData.pdf.match(/^http/) ? articleData.pdf : `/newhall-economist/pdf/${articleData.pdf}`,
                                                 }));
 
     // add each new panel to the accordion
