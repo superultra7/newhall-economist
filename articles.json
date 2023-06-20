@@ -1,0 +1,38 @@
+[
+  {
+  	"title": "Iron Man",
+  	"author": "",
+  	"pdf": "",
+  	"year": 2023,
+  	"thumbnail": "ironman.jpg",
+  	"description":"After being held captive in an Afghan cave, billionaire engineer Tony Stark creates a unique weaponized suit of armor to fight evil.",
+  	"tags": ["iron man", "origin","drama"]
+  },
+  {
+  	"title": "Tropic Thunder",
+  	"author": "",
+  	"pdf": "",
+  	"year": 2023,
+  	"thumbnail": "tropicthunder.jpg",
+  	"description":"Through a series of freak occurrences, a group of actors shooting a big-budget war movie are forced to become the soldiers they are portraying.",
+  	"tags": ["parody", "comedy"]
+  },
+  {
+  	"title": "Sherlock Holmes",
+  	"author": "",
+  	"pdf": "",
+  	"year": 2023,
+  	"thumbnail": "sherlockholmes.jpg",
+  	"description":"Detective Sherlock Holmes and his stalwart partner Watson engage in a battle of wits and brawn with a nemesis whose plot is a threat to all of England.",
+  	"tags": ["historical", "drama"]
+  },
+  {
+  	"title": "The Mukaab",
+  	"author": "",
+  	"pdf": "https://psyphi.net/mukaab.pdf",
+  	"year": 2023,
+  	"thumbnail": "sherlockholmes.jpg",
+  	"description":"The Mukaab. What is it? Why is it a thing? Who can pay for it? This article explores the economic and ethical benefits and drawbacks of this mysterious cube.",
+  	"tags": ["economics", "ethics", "something else"]
+  }
+]

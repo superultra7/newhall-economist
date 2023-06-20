@@ -1,0 +1,148 @@
+/* Palette
+6DA34D // palm leaf
+56445D // pineapple
+548687 // wintergreen dream
+8FBC94 // dark sea green
+C5E99B // medium spring bud
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Architects+Daughter|Bitter|Calistoga|Dancing+Script|Finger+Paint|Gloria+Hallelujah|Hind+Vadodara|Indie+Flower|Merriweather|Play|Rock+Salt|Shadows+Into+Light|Sulphur+Point|Varela+Round&display=swap');
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  /*font-family: Arial, Helvetica, sans-serif;
+  /*font-family: 'Finger Paint', cursive;*/
+  /*font-family: 'Rock Salt', cursive;*/
+  /*font-family: 'Calistoga', cursive;*/
+  /*font-family: 'Merriweather', serif;*/
+  font-family: 'Bitter', serif;*/
+  /*font-family: 'Varela Round', sans-serif;*/
+  /*font-family: 'Indie Flower', cursive;*/
+  /*font-family: 'Dancing Script', cursive;*/
+  /*font-family: 'Shadows Into Light', cursive;*/
+  /*font-family: 'Amatic SC', cursive;*/
+  /*font-family: 'Play', sans-serif;*/
+  /*font-family: 'Sulphur Point', sans-serif;*/
+  /*font-family: 'Gloria Hallelujah', cursive;*/
+  /*font-family: 'Hind Vadodara', sans-serif;*/
+  /*font-family: 'Architects Daughter', cursive;*/
+}
+
+/* Style the header */
+header {
+  background-color: #56445D;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+  font-family: 'Gloria Hallelujah', cursive;
+}
+
+header a, header a:visited, nav a, nav a:visited {
+  color: #8FBC94
+}
+/* Container for flexboxes */
+section {
+  display: -webkit-flex;
+  display: flex;
+}
+
+/* Style the navigation menu */
+nav {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  background: #56445D;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul#tags li {
+    display: inline-block;
+    padding: 0 0.2em;
+    border-left: 2px solid grey;
+}
+
+nav ul li:hover {
+    background: #aaa;
+}
+
+nav ul li:hover a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Style the content */
+article {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  background-color: #f1f1f1;
+  padding: 10px;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+#intro div {
+  // border:2px solid rgb(255, 0, 0);
+  background-color: #eee;
+  margin-bottom: 10px;
+  padding: 8px;
+}
+
+/*
+#intro {
+  background: blue;
+}
+
+#intro {
+  border: 3px dashed orange;
+}
+*/
+
+/* Carousel configuration */
+.carousel {
+  margin-bottom: 4rem;
+//  image-rendering: pixelated;
+//  background-color: #a00;
+background-size: cover;
+}
+
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel-item {
+  height: 32rem;
+}
+
+.carousel-item svg {
+  backdrop-filter: blur(3px);
+  opacity: 0.9;
+}

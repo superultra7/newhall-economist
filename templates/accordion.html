@@ -1,0 +1,14 @@
+<div class="accordion-item">
+  <h2 class="accordion-header" id="articleHeading${this.articleId}">
+    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse${this.articleId}" aria-expanded="false" aria-controls="collapse${this.articleId}">
+      ${this.year} ${this.title}
+    </button>
+  </h2>
+  <div id="collapse${this.articleId}" class="accordion-collapse collapse" aria-labelledby="articleHeading${this.articleId}" data-bs-parent="#accordionArticles">
+    <div class="accordion-body">
+	    ${this.description || ""}
+
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#pdfModal" data-bs-whatever="${this.pdf}">View PDF</button>
+    </div>
+  </div>
+</div>
