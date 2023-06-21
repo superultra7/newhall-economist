@@ -14,12 +14,12 @@ C5E99B // medium spring bud
 }
 
 body {
-  /*font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   /*font-family: 'Finger Paint', cursive;*/
   /*font-family: 'Rock Salt', cursive;*/
   /*font-family: 'Calistoga', cursive;*/
   /*font-family: 'Merriweather', serif;*/
-  font-family: 'Bitter', serif;*/
+  /*font-family: 'Bitter', serif;*/
   /*font-family: 'Varela Round', sans-serif;*/
   /*font-family: 'Indie Flower', cursive;*/
   /*font-family: 'Dancing Script', cursive;*/
@@ -42,9 +42,10 @@ header {
   font-family: 'Gloria Hallelujah', cursive;
 }
 
-header a, header a:visited, nav a, nav a:visited {
-  color: #ffffff
+h2, h3, h4, h5, h6 {
+    font-family: Times;
 }
+
 /* Container for flexboxes */
 section {
   display: -webkit-flex;
@@ -56,7 +57,7 @@ nav {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  background: #ffffff;
+/*  background: #ffffff;*/
   padding: 20px;
 }
 
@@ -72,13 +73,17 @@ nav ul#tags li {
     border-left: 2px solid grey;
 }
 
-nav ul li:hover {
+nav ul.nav li:hover {
     background: #aaa;
 }
 
 nav ul li:hover a {
     color: #fff;
     text-decoration: none;
+}
+
+.card {
+    float: left !important;
 }
 
 /* Style the content */

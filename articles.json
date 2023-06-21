@@ -2,9 +2,9 @@
   {
     "title": "The Mukaab",
     "author": "",
-    "pdf": "Mukaab.pdf",
+    "pdf": "pettett-mukaab.pdf",
     "year": 2023,
-    "thumbnail": "sherlockholmes.jpg",
+    "thumbnail": "mukaab.png",
     "description": "The Mukaab. What is it? Why is it a thing? Who can pay for it? This article explores the economic and ethical benefits and drawbacks of this mysterious cube.",
     "topics": [
       "middle east"
@@ -20,7 +20,7 @@
     "author": "",
     "pdf": "burrows-chinaafrica.pdf",
     "year": "2023",
-    "thumbnail": "",
+    "thumbnail": "china.png",
     "description": "",
     "topics": [],
     "tags": []

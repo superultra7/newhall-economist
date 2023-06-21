@@ -14,35 +14,32 @@
   <div class="modal fade" id="pdfModal" tabindex="-1" aria-labelledby="pdfModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-xl">
       <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="pdfModalLabel">Modal title</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
         <div class="modal-body" id="pdfEmbed">
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
         </div>
       </div>
     </div>
   </div>
 
   <header>
-    <h2>The New Hall Economist</h2>
+    <h1>The New Hall Economist</h1>
     <!--h6>Student-produced Economics Articles</h6-->
   </header>
 
   <section>
-    <nav>
+      <nav>
+	  <h2>Tags</h2>
       <!-- keywords extracted from article json go here -->
-      <ul class="nav flex-column" id="tags">
-      </ul>
-    </nav>
+	  <ul class="nav flex-column" id="tags">
+	  </ul>
+	  <ul class="flex-column">
+	      <li><button type="button" class="btn btn-primary"><a style="color:#fff;text-decoration:none" href="?">Reset</a></button></li>
+	  </ul>
+      </nav>
 
     <div class="container">
       <div id="Articles" class="row">
         <div class="col-12">
-          <div class="accordion" id="accordionArticles">
+          <div id="articles">
           </div>
         </div>
       </div>

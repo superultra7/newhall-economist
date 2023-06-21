@@ -9,7 +9,7 @@ const articlesByTag = {}; // a very basic search index
   const allArticleData = await fetch("articles.json").then(res => { return res.json(); });
 
   // load the panel template
-  const panelTemplate  = await fetch("templates/accordion.html").then(res => { return res.text(); });
+  const panelTemplate  = await fetch("templates/card-horizontal.html").then(res => { return res.text(); });
 
   // keep track of the article ids (sequentially) so we can reference them later when searching for tags
   let articleId = 0;
@@ -21,11 +21,11 @@ const articlesByTag = {}; // a very basic search index
                                                  pdf: articleData.pdf.match(/^http/) ? articleData.pdf : `pdf/${articleData.pdf}`,
                                                 }));
 
-    // add each new panel to the accordion
-    panel.css({"backgroundImage":`url(/thumbnail/${articleData.thumbnail})`});
+    // add each new panel to the article container
+    //panel.css({"backgroundImage":`url(/thumbnail/${articleData.thumbnail})`});
 
-    // "append" function tacks the panel content onto the end of the accordion
-    $('#accordionArticles').append(panel);
+    // "append" function tacks the panel content onto the end of the article container
+    $('#articles').append(panel);
 	
     if(articleData.tags) {
       // if there are tags for this article, keep track of them
@@ -47,12 +47,12 @@ const articlesByTag = {}; // a very basic search index
     $('#tags').append($(`<li><a href="?tag=${tag}">${tag}</a></li>`));
   });
 
-  const tagQuery = document.location.href // from the URL in the address bar...
+  const tagQuery = document.location.href   // from the URL in the address bar...
 	  .split('#')[0]                    // trim any following internal # anchors
 	  .split('?')[1]                    // trim any preceeding URL
     ?.split(/[;&]/)                         // split query parameters by ; or &
-	.filter(x => x.match(/^tag=/))[0]   // discard anything except tag=xxx
-	.split('=')[1];                     // split on = and retain value
+	?.filter(x => x.match(/^tag=/))[0]   // discard anything except tag=xxx
+	?.split('=')[1];                     // split on = and retain value
 
   const expandArticles = tagQuery ? articlesByTag[decodeURI(tagQuery)] : [ 0 ];
 
@@ -69,7 +69,8 @@ const articlesByTag = {}; // a very basic search index
     // Update the modal's content.
     const modalTitle = pdfModal.querySelector('.modal-title')
     
-    const modalBodyEmbed = pdfModal.querySelector('.modal-body')
-    $(modalBodyEmbed).html(`<embed src="${pdfURL}" frameborder="0" width="100%" height="400px">`);
+      const modalBodyEmbed = pdfModal.querySelector('.modal-body')
+      const height = $(window).height() - 100;
+    $(modalBodyEmbed).html(`<embed src="${pdfURL}" frameborder="0" width="100%" height="${height}px">`);
   })
 })();
