@@ -1,38 +1,198 @@
 [
   {
-  	"title": "Iron Man",
-  	"author": "",
-  	"pdf": "",
-  	"year": 2023,
-  	"thumbnail": "ironman.jpg",
-  	"description":"After being held captive in an Afghan cave, billionaire engineer Tony Stark creates a unique weaponized suit of armor to fight evil.",
-  	"tags": ["iron man", "origin","drama"]
+    "title": "The Mukaab",
+    "author": "",
+    "pdf": "Mukaab.pdf",
+    "year": 2023,
+    "thumbnail": "sherlockholmes.jpg",
+    "description": "The Mukaab. What is it? Why is it a thing? Who can pay for it? This article explores the economic and ethical benefits and drawbacks of this mysterious cube.",
+    "topics": [
+      "middle east"
+    ],
+    "tags": [
+      "economics",
+      "ethics",
+      "something else"
+    ]
   },
   {
-  	"title": "Tropic Thunder",
-  	"author": "",
-  	"pdf": "",
-  	"year": 2023,
-  	"thumbnail": "tropicthunder.jpg",
-  	"description":"Through a series of freak occurrences, a group of actors shooting a big-budget war movie are forced to become the soldiers they are portraying.",
-  	"tags": ["parody", "comedy"]
+    "title": "China Africa",
+    "author": "",
+    "pdf": "burrows-chinaafrica.pdf",
+    "year": "2023",
+    "thumbnail": "",
+    "description": "",
+    "topics": [],
+    "tags": []
   },
   {
-  	"title": "Sherlock Holmes",
-  	"author": "",
-  	"pdf": "",
-  	"year": 2023,
-  	"thumbnail": "sherlockholmes.jpg",
-  	"description":"Detective Sherlock Holmes and his stalwart partner Watson engage in a battle of wits and brawn with a nemesis whose plot is a threat to all of England.",
-  	"tags": ["historical", "drama"]
+    "title": "Marx Engels",
+    "author": "",
+    "pdf": "carter-marxengels.pdf",
+    "year": "2023",
+    "thumbnail": "",
+    "description": "",
+    "topics": [],
+    "tags": []
   },
   {
-  	"title": "The Mukaab",
-  	"author": "",
-  	"pdf": "Mukaab.pdf",
-  	"year": 2023,
-  	"thumbnail": "sherlockholmes.jpg",
-  	"description":"The Mukaab. What is it? Why is it a thing? Who can pay for it? This article explores the economic and ethical benefits and drawbacks of this mysterious cube.",
-  	"tags": ["economics", "ethics", "something else"]
+    "title": "Sweden Thriving",
+    "author": "",
+    "pdf": "chan-swedenthriving.pdf",
+    "year": "2023",
+    "thumbnail": "",
+    "description": "",
+    "topics": [],
+    "tags": []
+  },
+  {
+    "title": "Graphics Cards",
+    "author": "",
+    "pdf": "chow-graphicscards.pdf",
+    "year": "2023",
+    "thumbnail": "",
+    "description": "",
+    "topics": [],
+    "tags": []
+  },
+  {
+    "title": "Wall Street Germany",
+    "author": "",
+    "pdf": "dugganlam-wallstreetgermany.pdf",
+    "year": "2023",
+    "thumbnail": "",
+    "description": "",
+    "topics": [],
+    "tags": []
+  },
+  {
+    "title": "Impact of Brexit",
+    "author": "",
+    "pdf": "fung-impactbrexit.pdf",
+    "year": "2023",
+    "thumbnail": "",
+    "description": "",
+    "topics": [],
+    "tags": []
+  },
+  {
+    "title": "Japanese Deflation",
+    "author": "",
+    "pdf": "ho-japanesedeflation.pdf",
+    "year": "2023",
+    "thumbnail": "",
+    "description": "",
+    "topics": [],
+    "tags": []
+  },
+  {
+    "title": "Protect Nature",
+    "author": "",
+    "pdf": "iwu-protectnature.pdf",
+    "year": "2023",
+    "thumbnail": "",
+    "description": "",
+    "topics": [],
+    "tags": []
+  },
+  {
+    "title": "Robot Wages",
+    "author": "",
+    "pdf": "iwu-robotwages.pdf",
+    "year": "2023",
+    "thumbnail": "",
+    "description": "",
+    "topics": [],
+    "tags": []
+  },
+  {
+    "title": "Russian Collapse",
+    "author": "",
+    "pdf": "iwu-russiancollapse.pdf",
+    "year": "2023",
+    "thumbnail": "",
+    "description": "",
+    "topics": [],
+    "tags": []
+  },
+  {
+    "title": "Financial Crisis",
+    "author": "",
+    "pdf": "kariyawasamebere-uneze-financialcrisis.pdf",
+    "year": "2023",
+    "thumbnail": "",
+    "description": "",
+    "topics": [],
+    "tags": []
+  },
+  {
+    "title": "SVB Collapse",
+    "author": "",
+    "pdf": "lam-svbcollapse.pdf",
+    "year": "2023",
+    "thumbnail": "",
+    "description": "",
+    "topics": [],
+    "tags": []
+  },
+  {
+    "title": "UBS Credit Suisse",
+    "author": "",
+    "pdf": "solyanyk-ubscreditsuisse.pdf",
+    "year": "2023",
+    "thumbnail": "",
+    "description": "",
+    "topics": [],
+    "tags": []
+  },
+  {
+    "title": "Economics of Wellbeing",
+    "author": "",
+    "pdf": "tang-economicsofwellbeing.pdf",
+    "year": "2023",
+    "thumbnail": "",
+    "description": "",
+    "topics": [],
+    "tags": []
+  },
+  {
+    "title": "Economics of Vaping",
+    "author": "",
+    "pdf": "tangchahil-economicsvaping.pdf",
+    "year": "2023",
+    "thumbnail": "",
+    "description": "",
+    "topics": [],
+    "tags": []
+  },
+  {
+    "title": "Demise of Hong Kong",
+    "author": "",
+    "pdf": "wongridley-demisehongkong.pdf",
+    "year": "2023",
+    "thumbnail": "",
+    "description": "",
+    "topics": [],
+    "tags": []
+  },
+  {
+    "title": "Brain Drain India",
+    "author": "",
+    "pdf": "yagnik-braindrainindia.pdf",
+    "year": "2023",
+    "thumbnail": "",
+    "description": "",
+    "topics": [],
+    "tags": []
+  },
+  {
+    "title": "Ancient Greece",
+    "author": "",
+    "pdf": "zhao-ancientgreece.pdf",
+    "year": "2023",
+    "thumbnail": "",
+    "description": "",
+    "topics": [],
+    "tags": []
   }
 ]
