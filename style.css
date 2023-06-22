@@ -33,121 +33,29 @@ body {
 }
 
 /* Style the header */
-header {
+header nav {
+    padding:0 !important;
+}
+
+h1 {
   background-color: #e3120b;
-  padding: 30px;
+  padding: 10px;
+  margin: 0;
   text-align: center;
-  font-size: 35px;
+  font-size: 24px;
   color: white;
   font-family: 'Gloria Hallelujah', cursive;
+}
+
+
+main > .container {
+  padding: 60px 15px 0;
 }
 
 h2, h3, h4, h5, h6 {
     font-family: Times;
 }
 
-/* Container for flexboxes */
-section {
-  display: -webkit-flex;
-  display: flex;
-}
-
-/* Style the navigation menu */
-nav {
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-/*  background: #ffffff;*/
-  padding: 20px;
-}
-
-/* Style the list inside the menu */
-nav ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-nav ul#tags li {
-    display: inline-block;
-    padding: 0 0.2em;
-    border-left: 2px solid grey;
-}
-
-nav ul.nav li:hover {
-    background: #aaa;
-}
-
-nav ul li:hover a {
-    color: #fff;
-    text-decoration: none;
-}
-
-.card {
-    float: left !important;
-}
-
-/* Style the content */
-article {
-  -webkit-flex: 3;
-  -ms-flex: 3;
-  flex: 3;
-  background-color: #f1f1f1;
-  padding: 10px;
-}
-
-/* Style the footer */
-footer {
-  background-color: #333333;
-  padding: 10px;
-  text-align: center;
-  color: white;
-}
-
-/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
-@media (max-width: 600px) {
-  section {
-    -webkit-flex-direction: column;
-    flex-direction: column;
-  }
-}
-
-#intro div {
-  // border:2px solid rgb(255, 0, 0);
-  background-color: #eee;
-  margin-bottom: 10px;
-  padding: 8px;
-}
-
-/*
-#intro {
-  background: blue;
-}
-
-#intro {
-  border: 3px dashed orange;
-}
-*/
-
-/* Carousel configuration */
-.carousel {
-  margin-bottom: 4rem;
-//  image-rendering: pixelated;
-//  background-color: #a00;
-background-size: cover;
-}
-
-/* Since positioning the image, we need to help out the caption */
-.carousel-caption {
-  bottom: 3rem;
-  z-index: 10;
-}
-
-/* Declare heights because of positioning of img element */
-.carousel-item {
-  height: 32rem;
-}
-
-.carousel-item svg {
-  backdrop-filter: blur(3px);
-  opacity: 0.9;
+nav ul#tags li a {
+    text-transform: capitalize;
 }

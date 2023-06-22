@@ -44,7 +44,7 @@ const articlesByTag = {}; // a very basic search index
   });
 
   Object.keys(articlesByTag).forEach((tag) => {
-    $('#tags').append($(`<li><a href="?tag=${tag}">${tag}</a></li>`));
+    $('#tags').append($(`<li class="nav-item"><a class="nav-link" href="?tag=${tag}">${tag}</a></li>`));
   });
 
   const tagQuery = document.location.href   // from the URL in the address bar...
