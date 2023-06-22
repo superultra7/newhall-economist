@@ -47,9 +47,8 @@ h1 {
   font-family: 'Gloria Hallelujah', cursive;
 }
 
-
 main > .container {
-  padding: 60px 15px 0;
+  padding: 100px 15px 0;
 }
 
 h2, h3, h4, h5, h6 {
@@ -59,3 +58,10 @@ h2, h3, h4, h5, h6 {
 nav ul#tags li a {
     text-transform: capitalize;
 }
+
+div p.card-text {
+    font-size: smaller;
+    text-align: justify;
+}
+
+    
