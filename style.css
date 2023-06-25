@@ -55,7 +55,7 @@ h2, h3, h4, h5, h6 {
     font-family: Times;
 }
 
-nav ul#tags li a {
+nav ul#topics li a {
     text-transform: capitalize;
 }
 
