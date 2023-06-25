@@ -43,8 +43,13 @@ h1 {
   margin: 0;
   text-align: center;
   font-size: 24px;
-  color: white;
+  color: #fff;
   font-family: 'Gloria Hallelujah', cursive;
+}
+
+h1 a, h1 a:hover {
+  text-decoration: none;
+  color: #fff;
 }
 
 main > .container {
