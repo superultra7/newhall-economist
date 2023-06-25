@@ -13,7 +13,6 @@ const articlesByTopic = {}; // a very basic search index
     ?.filter(x => x.match(/^topic=/))[0]      // discard anything except topic=xxx
     ?.split('=')[1];                        // split on = and retain value
     const topicQuery = decodeURI(topicQueryEncoded || "");
-    console.log(topicQuery);
 
     // load all the article data
     fetch("articles.json")
@@ -72,7 +71,7 @@ const articlesByTopic = {}; // a very basic search index
 	.then(() => {
 	    // populate header bar with topic links
 	    Object.keys(articlesByTopic).sort().forEach((topic) => {
-		$('#topics').append($(`<li class="nav-item"><a class="nav-link" href="?topic=${topic}">${topic}</a></li>`));
+		$('#topics').append($(`<li class="nav-item"><a class="nav-link ${topic === topicQuery ? 'active' : ''}" href="?topic=${topic}">${topic}</a></li>`));
 	    });
 	})
 	.then(() => {
