@@ -12,7 +12,8 @@ const articlesByTopic = {}; // a very basic search index
     ?.split(/[;&]/)                         // split query parameters by ; or &
     ?.filter(x => x.match(/^topic=/))[0]      // discard anything except topic=xxx
     ?.split('=')[1];                        // split on = and retain value
-    const topicQuery = decodeURI(topicQueryEncoded);
+    const topicQuery = decodeURI(topicQueryEncoded || "");
+    console.log(topicQuery);
 
     // load all the article data
     fetch("articles.json")
@@ -46,8 +47,9 @@ const articlesByTopic = {}; // a very basic search index
 				} else {
 				    $(panel).hide();
 				}
+			    } else {
+				$(panel).show();
 			    }
-
 			});
 
 		    if(articleData.topics) {
