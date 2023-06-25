@@ -4,73 +4,83 @@ const fillTemplate = (templateString, templateVars) => {
 
 const articlesByTag = {}; // a very basic search index
 
-(async () => {
-  // load all the article data
-  const allArticleData = await fetch("articles.json").then(res => { return res.json(); });
+(() => {
+    // load all the article data
+    fetch("articles.json")
+	.then(res => { return res.json(); })
+	.then(allArticleData => {
 
-  // load the panel template
-  const panelTemplate  = await fetch("templates/card-horizontal.html").then(res => { return res.text(); });
+	    // keep track of the article ids (sequentially) so we can reference them later when searching for tags
+	    let articleId = 0;
 
-  // keep track of the article ids (sequentially) so we can reference them later when searching for tags
-  let articleId = 0;
+	    // iterate over articles and fill in a copy of the template for each one
+	     allArticleData
+		.forEach(articleData => {
+		    const templateName = articleData.template || "card-horizontal";
+		    // load the panel template
+		    fetch(`templates/${templateName}.html`)
+			.then(res => { return res.text(); })
+			.then(panelTemplate => {
+			    return $(fillTemplate(panelTemplate, {
+				articleId,
+				...articleData,
+				pdf: articleData.pdf.match(/^http/) ? articleData.pdf : `pdf/${articleData.pdf}`,
+			    }));
+			})
+			.then(panel => {
+			    // "append" function tacks the panel content onto the end of the article container
+			    $('#articles').append(panel);
+			});
 
-  // iterate over articles and fill in a copy of the template for each one
-  allArticleData.forEach(articleData => {
-    const panel = $(fillTemplate(panelTemplate, {articleId,
-                                                 ...articleData,
-                                                 pdf: articleData.pdf.match(/^http/) ? articleData.pdf : `pdf/${articleData.pdf}`,
-                                                }));
+		    if(articleData.topics) {
+			// if there are tags for this article, keep track of them
+			articleData.topics.forEach((tag) => {
+			    if(!articlesByTag[tag]) {
+				// if we haven't stored any articles for this tag, initialise with an empty array
+				articlesByTag[tag] = [];
+			    }
 
-    // add each new panel to the article container
-    //panel.css({"backgroundImage":`url(/thumbnail/${articleData.thumbnail})`});
+			    // store the article id against this tag (meaning we can look up the article ids for any given tag when searching)
+			    articlesByTag[tag].push(articleId);
+			});
+		    }
 
-    // "append" function tacks the panel content onto the end of the article container
-    $('#articles').append(panel);
-	
-    if(articleData.tags) {
-      // if there are tags for this article, keep track of them
-      articleData.tags.forEach((tag) => {
-        if(!articlesByTag[tag]) {
-          // if we haven't stored any articles for this tag, initialise with an empty array
-          articlesByTag[tag] = [];
-        }
+		    articleId += 1;
+		});
+	})
 
-        // store the article id against this tag (meaning we can look up the article ids for any given tag when searching)
-        articlesByTag[tag].push(articleId);
-      });
-    }
+	.then(() => {
+	    console.log(articlesByTag);
+	    Object.keys(articlesByTag).sort().forEach((tag) => {
+		$('#tags').append($(`<li class="nav-item"><a class="nav-link" href="?tag=${tag}">${tag}</a></li>`));
+	    });
 
-    articleId += 1;
-  });
+	    const tagQuery = document.location.href   // from the URL in the address bar...
+		  .split('#')[0]                    // trim any following internal # anchors
+		  .split('?')[1]                    // trim any preceeding URL
+	    ?.split(/[;&]/)                         // split query parameters by ; or &
+	    ?.filter(x => x.match(/^tag=/))[0]   // discard anything except tag=xxx
+	    ?.split('=')[1];                     // split on = and retain value
 
-  Object.keys(articlesByTag).forEach((tag) => {
-    $('#tags').append($(`<li class="nav-item"><a class="nav-link" href="?tag=${tag}">${tag}</a></li>`));
-  });
+	    const expandArticles = tagQuery ? articlesByTag[decodeURI(tagQuery)] : [ 0 ];
 
-  const tagQuery = document.location.href   // from the URL in the address bar...
-	  .split('#')[0]                    // trim any following internal # anchors
-	  .split('?')[1]                    // trim any preceeding URL
-    ?.split(/[;&]/)                         // split query parameters by ; or &
-	?.filter(x => x.match(/^tag=/))[0]   // discard anything except tag=xxx
-	?.split('=')[1];                     // split on = and retain value
-
-  const expandArticles = tagQuery ? articlesByTag[decodeURI(tagQuery)] : [ 0 ];
-
-  expandArticles?.forEach((articleId) => {
-    $(`#collapse${articleId}`).addClass('show');
-  });
-
-  const pdfModal = document.getElementById('pdfModal');
-  pdfModal.addEventListener('show.bs.modal', event => {
-    // Button that triggered the modal
-    const button = event.relatedTarget
-    // Extract target url from data-bs-* attributes
-    const pdfURL = button.getAttribute('data-bs-whatever')
-    // Update the modal's content.
-    const modalTitle = pdfModal.querySelector('.modal-title')
+	    expandArticles?.forEach((articleId) => {
+		$(`#collapse${articleId}`).addClass('show');
+	    });
+	})
+	.then(() => {
+	    const pdfModal = document.getElementById('pdfModal');
+	    pdfModal.addEventListener('show.bs.modal', event => {
+		// Button that triggered the modal
+		const button = event.relatedTarget
+		// Extract target url from data-bs-* attributes
+		const pdfURL = button.getAttribute('data-bs-whatever')
+		// Update the modal's content.
+		const modalTitle = pdfModal.querySelector('.modal-title')
     
-      const modalBodyEmbed = pdfModal.querySelector('.modal-body')
-      const height = $(window).height() - 100;
-    $(modalBodyEmbed).html(`<embed src="${pdfURL}" frameborder="0" width="100%" height="${height}px">`);
-  })
+		const modalBodyEmbed = pdfModal.querySelector('.modal-body')
+		const height = $(window).height() - 100;
+		$(modalBodyEmbed).html(`<embed src="${pdfURL}" frameborder="0" width="100%" height="${height}px">`);
+	    })
+	});
 })();

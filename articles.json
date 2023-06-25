@@ -7,12 +7,7 @@
     "thumbnail": "mukaab.png",
     "description": "The Mukaab. What is it? Why is it a thing? Who can pay for it? This article explores the economic and ethical benefits and drawbacks of this mysterious cube.",
     "topics": [
-      "middle east"
-    ],
-    "tags": [
-      "economics",
-      "ethics",
-      "something else"
+	"middle east", "Ethics"
     ]
   },
   {
@@ -22,8 +17,7 @@
     "year": "2023",
     "thumbnail": "china.png",
     "description": "China has been the largest equity\ninvestor into Africa since 2013.\nThis is motivated by an abundance\nof natural resources, growing\nindustry, a 30,500km coastline and\nrich agriculture with only 25% of\narable land cultivated.",
-    "topics": [],
-    "tags": []
+    "topics": ["Asia"]
   },
   {
     "title": "Marx Engels",
@@ -32,8 +26,7 @@
     "year": "2023",
     "thumbnail": "marxism.png",
     "description": "Marx argued that workers create\nvalue through their work, yet are\nnot compensated properly. The\nlabour is exploited by the ruling\nclass, the bourgeoisie, who\ngenerate profits by selling the\nproducts at a higher price than\nwhat is given to the workers in\nreturn for their labour.",
-    "topics": [],
-    "tags": []
+    "topics": ["socioeconomics"]
   },
   {
     "title": "Sweden Thriving",
@@ -42,8 +35,7 @@
     "year": "2023",
     "thumbnail": "sweden.png",
     "description": "Sweden has been most renowned\nfor being one of the leading\neconomies globally in terms of\nsustainability. This could be\nillustrated through Sweden’s\nrankings in indexes that measures\neconomic sustainability.",
-    "topics": [],
-    "tags": []
+    "topics": ["Europe"]
   },
   {
     "title": "Graphics Cards",
@@ -51,9 +43,9 @@
     "pdf": "chow-graphicscards.pdf",
     "year": "2023",
     "thumbnail": "gpu.webp",
+    "template": "card-vertical",
     "description": " am confident that the majority of\nus have smartphones, tablets or\ncomputers and use them on a\ndaily basis. Scrolling through\nsocial media feed, searching\ninformation online, playing video\ngames et cetera.",
-    "topics": [],
-    "tags": []
+    "topics": ["Science and Technology"]
   },
   {
     "title": "Wall Street Germany",
@@ -62,8 +54,7 @@
     "year": "2023",
     "thumbnail": "wallstreetgermany.jpg",
     "description": "The Wall Street crash of 1929,\nalso known as Black Tuesday, was\na catastrophic event in the history\nof the global economy. The Great\nDepression was brought about by\nthe collapse US stock market,\nwhich had far-reaching effects.",
-    "topics": [],
-    "tags": []
+    "topics": ["Europe"]
   },
   {
     "title": "Impact of Brexit",
@@ -71,19 +62,19 @@
     "pdf": "fung-impactbrexit.pdf",
     "year": "2023",
     "thumbnail": "brexitdice.jpg",
+    "template": "card-vertical",
     "description": "The United Kingdom's decision to\nleave the European Union,\npopularly known as Brexit, was a\nsignificant moment in European\npolitics.",
-    "topics": [],
-    "tags": []
+      "topics": ["UK","Europe"]
   },
   {
     "title": "Japanese Deflation",
     "author": "",
     "pdf": "ho-japanesedeflation.pdf",
     "year": "2023",
-    "thumbnail": "japanflag.jpeg",
+    "thumbnail": "japanflag.jpg",
+    "template": "card-vertical",
     "description": "Sweden has been most renowned\nfor being one of the leading\neconomies globally in terms of\nsustainability. This could be\nillustrated through Sweden’s\nrankings in indexes that measures\neconomic sustainability.",
-    "topics": [],
-    "tags": []
+    "topics": ["Asia"]
   },
   {
     "title": "Protect Nature",
@@ -91,9 +82,9 @@
     "pdf": "iwu-protectnature.pdf",
     "year": "2023",
     "thumbnail": "moneytree.avif",
+    "template": "card-vertical",
     "description": "In this article I outline my policies\nthat I believe will aid governments\naround the world in protecting and\nrestoring natural environments.",
-    "topics": [],
-    "tags": []
+    "topics": ["Ethics"]
   },
   {
     "title": "Robot Wages",
@@ -102,8 +93,7 @@
     "year": "2023",
     "thumbnail": "robot.png",
     "description": "Today we see that robots are the\nproduct of the economic\nevolution towards the automative\nindustry, in particular automation\ncapital.",
-    "topics": [],
-    "tags": []
+    "topics": ["Science and Technology"]
   },
   {
     "title": "Russian Collapse",
@@ -111,88 +101,85 @@
     "pdf": "iwu-russiancollapse.pdf",
     "year": "2023",
     "thumbnail": "russiansanctions.jpg",
+    "template": "card-vertical",
     "description": "The widespread economic\nsanctions imposed on Russia, a\nstate who have struggled to\ndiversify from ‘conservative and\ntight’ economic philosophy\npreferred by their finance\nministers, are likely to completely\ncripple the Russian economy.",
-    "topics": [],
-    "tags": []
+      "topics": ["Europe","Asia"]
   },
   {
     "title": "Financial Crisis",
     "author": "",
     "pdf": "kariyawasamebere-uneze-financialcrisis.pdf",
     "year": "2023",
-    "thumbnail": "",
+    "thumbnail": "financialcrisis.jpg",
     "description": "The financial crisis refers to a\nperiod of economic turmoil\ncharacterised by a sharp\ndecline in asset prices, a\ncontraction of credit markets,\nand a widespread increase in\nbankruptcies and defaults.",
-    "topics": [],
-    "tags": []
+      "topics": ["Global"]
   },
   {
     "title": "SVB Collapse",
     "author": "",
     "pdf": "lam-svbcollapse.pdf",
     "year": "2023",
-    "thumbnail": "",
+    "thumbnail": "svbcrash.jpg",
+    "template": "card-vertical",
     "description": "On the 10th March, Silicon Valley\nBank collapsed only 48 hours after\na statement released which\nsought to raise US$2.5 billion to\nrepair a hole in its balance sheet.",
-    "topics": [],
-    "tags": []
+    "topics": ["US"]
   },
   {
     "title": "UBS Credit Suisse",
     "author": "",
     "pdf": "solyanyk-ubscreditsuisse.pdf",
     "year": "2023",
-    "thumbnail": "",
+    "thumbnail": "ubscreditsuisse.jpg",
+    "template": "card-vertical",
     "description": "On the weekend beginning 18th\nMarch, authorities in Switzerland\nprepared emergency measures to\nfast-track a takeover of Credit\nSuisse by UBS.",
-    "topics": [],
-    "tags": []
+    "topics": ["Europe"]
   },
   {
     "title": "Economics of Wellbeing",
     "author": "",
     "pdf": "tang-economicsofwellbeing.pdf",
     "year": "2023",
-    "thumbnail": "",
+    "thumbnail": "wellbeing.png",
+    "template": "card-vertical",
     "description": "“Since the beginning of this\ndecade, global output has grown\nby over 3 percent annually and\ninflation has slowed down in\nvirtually all regions of the world.",
-    "topics": [],
-    "tags": []
+      "topics": ["Ethics","Global"]
   },
   {
     "title": "Economics of Vaping",
     "author": "",
     "pdf": "tangchahil-economicsvaping.pdf",
     "year": "2023",
-    "thumbnail": "",
+    "thumbnail": "vaping.avif",
     "description": "There are many costs to an\neconomy if it has a sustained\ndifference in inequality, and we\ncan usually find some of these\ntraits in countries with high Gini\nIndex.",
-    "topics": [],
-    "tags": []
+    "topics": ["Global"]
   },
   {
     "title": "Demise of Hong Kong",
     "author": "",
     "pdf": "wongridley-demisehongkong.pdf",
     "year": "2023",
-    "thumbnail": "",
+    "thumbnail": "hongkongdemise.webp",
+    "template": "card-vertical",
     "description": "Due to the pandemic, Hong Kong\nwas experiencing slow economic\ngrowth because of weakened\ndomestic demand.",
-    "topics": [],
-    "tags": []
+    "topics": ["Asia"]
   },
   {
     "title": "Brain Drain India",
     "author": "",
     "pdf": "yagnik-braindrainindia.pdf",
     "year": "2023",
-    "thumbnail": "",
+    "thumbnail": "indiabraindrain.jpg",
+    "template": "card-vertical",
     "description": "A ‘brain drain’ occurs when an\neconomy loses its most highly\nskilled and competent individuals\nin the labour force to other\ncountries, perhaps due to political\nturmoil present within a nation or\nmore favourable economic\nopportunities elsewhere.",
-    "topics": [],
-    "tags": []
+    "topics": ["Asia"]
   },
   {
     "title": "Ancient Greece",
     "author": "",
     "pdf": "zhao-ancientgreece.pdf",
     "year": "2023",
-    "thumbnail": "",
+    "thumbnail": "greece.jpg",
     "description": "The Ancient Greeks had their own currency called the drachma with an Athenian monetary system set up.",
-    "topics": [],
-    "tags": []
+    "topics": ["Europe"]
   }
 ]
